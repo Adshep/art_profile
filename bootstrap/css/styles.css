@@ -1,17 +1,18 @@
 .carousel {
   max-width: 40%;
   margin: 0 auto;
+  overflow:hidden;
 }
 
 /* Make all images the same size */
 .carousel-inner img {
   width: 100%; /* Stretch to fit the carousel width */
-  height: 1000px; /* Fixed height */
   object-fit: cover; /* Ensures the image scales properly without distortion */
+  max-height: 80vh;
 }
 
 .navbar {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem;
     height: 100px;
 }
 .navbar .nav-link {
@@ -22,3 +23,27 @@
     font-size: 2rem;
     padding: 1.5rem 2rem;
 }
+.carousel-caption {
+
+  background-color: rgba(0, 0, 0, 0.6); /* Black background with 60% opacity */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Add padding around the text */
+  border-radius: 5px; /* Rounded corners for the background */
+  bottom: 20px; /* Position it closer to the bottom of the image */
+  text-align: left; /* Align text to the left for a professional look */
+  z-index: 2; /* Ensure the text is above the overlay */
+}
+.carousel-caption h5 {
+  font-size: 1.5rem; /* Larger font for the title */
+  font-weight: bold; /* Make the title bold */
+
+}
+
+.carousel-caption p {
+  font-size: 1rem; /* Slightly smaller for subtitles */
+
+}.carousel-item {
+  position: relative;
+}
+
+
